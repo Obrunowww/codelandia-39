@@ -155,6 +155,38 @@ section div:hover{
 a:hover{
     text-decoration: underline;
 }
+@media(min-width:769px) and (max-width:1024px){
+    main{
+        height: 200vh;
+    }
+    .primeiraSessãoDaMain{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        height: 180vh;
+        
+    }
+    h1{
+        text-align: center;
+    }
+    .primeiraSessãoDaMain div{
+        width: 80vw !important;
+        height: 40vh !important;
+        background-size: 100% 100% ;
+    }
+    .nfs{
+        background-position: 65%;
+    }
+    footer button{
+        width: 10%;
+    }
+    footer nav{
+        width: 50%;
+    }
+
+} 
 @media(max-width:768px){
     .primeiraNavHeader{
         display: none;
