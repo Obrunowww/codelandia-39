@@ -78,7 +78,7 @@ section{
     border-radius: 5px;
     box-shadow: 0px 10px 20px black;
     background-repeat: no-repeat;
-    
+    background-position: center;
 }
 div p{
     width: 80%;
@@ -174,8 +174,13 @@ a:hover{
     .primeiraSessãoDaMain div{
         width: 80vw !important;
         height: 40vh !important;
-        background-size: 100% 100% ;
+        background-position: 0% 30%;
     }
+    .primeiraSessãoDaMain :nth-child(1){
+        background-position:  1% 10%;
+    }
+        
+    
     .nfs{
         background-position: 65%;
     }
