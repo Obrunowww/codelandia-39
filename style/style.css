@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Caesar+Dressing&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Nunito', sans-serif;
+    transition: ease 1s;
+}
+
+header{
+    display: flex;
+    width: 100%;
+    height: 12vh;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid #E2E2E2;
+}
+.primeiraNavHeader{
+    width: 25vh;
+    display: flex;
+    justify-content: space-around;
+}
+h1{ 
+    width: 40vh;
+
+    font-family: 'Caesar Dressing', sans-serif;
+    font-size: 40px;
+    line-height: 66px;
+}
+.segundaNavHeader{
+    width: 20vh;
+    display: flex;
+    justify-content: space-around;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    align-items: center;
+    height: 135vh;
+}
+main nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 15vh;
+}
+main nav a{
+    color: rgba(16, 15, 15, 1);
+}
+main ul{
+    display: flex;
+    justify-content: space-around;
+    width: 70vh;
+}
+section{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.primeiraSessãoDaMain{
+    display: flex;
+    width: 70%;
+    height: 110vh;
+}
+.primeiraSessãoDaMain div{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 50vh;
+    width: 18vw;
+    border-radius: 5px;
+    box-shadow: 0px 10px 20px black;
+    background-repeat: no-repeat;
+    
+}
+div p{
+    width: 80%;
+    position: relative;
+    bottom: 10px;
+    font-size: 12px;
+    color: rgba(226, 226, 226, 0.753);
+
+}
+div h2{
+    width: 80%;
+    font-size: 15px;
+    position: relative;
+    bottom: 10px;
+    color: rgba(249, 249, 249, 1);
+}
+
+.xbox{
+    background: url(../imagens/xbox.jpg);
+    background-size: cover;
+}
+.cyberpunk{
+    background: url(../imagens/cyberpunk.jpg.jpg);
+    background-size: cover;
+}
+.multiversus{
+    background: url(../imagens/hero\ 1.png);
+    background-size: cover;
+}
+.nfs{
+    width: 61.5vw !important;
+    background: url(../imagens/needforspeed.jpg.jpg);
+    background-size: cover;
+}
+.nfs p, .nfs h2 {
+    width: 98%;
+
+}
+.maisConteudo{
+    cursor: pointer;
+}
+footer{
+    display: flex;
+    align-items: center;
+    border-top: solid 1px #E2E2E2;
+    height: 13vh;
+    justify-content: space-around;
+}
+footer button{
+    display: flex;
+    align-items: center;
+    height: 5vh;
+    width: 4vw;
+    justify-content: space-between;
+    border: none;
+    background: transparent;
+}
+footer nav{
+    width: 30vw;
+}
+footer ul{
+    display: flex;
+    justify-content: space-between;
+}
+footer a{
+    color: rgba(16, 15, 15, 1);
+}
+section div:hover{
+    scale: 1.1;
+    border: solid 0.5px;
+    box-shadow: 0px 5px 30px #000000;
+   
+}
+a:hover{
+    text-decoration: underline;
+}
+@media(max-width:768px){
+    .primeiraNavHeader{
+        display: none;
+        
+    }
+    header{
+        flex-direction: column;
+        height: 12vh;
+    }
+    h1{
+        text-align: center;
+    }
+    main{
+        height: 240vh;
+    }
+    .primeiraSessãoDaMain{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 220vh;
+    }
+    .primeiraSessãoDaMain div{
+        width: 85vw !important;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    .nfs{
+        background-size: cover !important;
+        background-position:65%;
+    }
+    footer{
+        flex-direction: column;
+    }
+    footer ul{
+        flex-direction: column;
+    }
+    footer button{
+        width: 20%;
+    }
+    footer nav{
+        width: 90%;
+    }
+
+}
